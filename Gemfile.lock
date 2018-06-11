@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/comics-apps/cdb-crawlr.git
+  revision: 8ebd398e98553d9d100c01ee5c6ef5f8cc6f3270
+  specs:
+    cdb-crawlr (0.3.3)
+      nokogiri
+      thor (~> 0.20)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -8,15 +16,20 @@ GEM
       multipart-post (>= 1.2, < 3)
     marvel-api (0.1.0)
       faraday
+    mini_portile2 (2.3.0)
     multipart-post (2.0.0)
+    nokogiri (1.8.2)
+      mini_portile2 (~> 2.3.0)
     rack (2.0.5)
     roda (3.9.0)
       rack
+    thor (0.20.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  cdb-crawlr!
   comic_vine-api
   dotenv
   marvel-api

@@ -1,3 +1,4 @@
+require "cdb-crawlr"
 require "comic_vine/api"
 require "dotenv"
 require "marvel/api"

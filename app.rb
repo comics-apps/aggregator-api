@@ -4,6 +4,7 @@ class App < Roda
 
   require_relative "routes/cv"
   require_relative "routes/m"
+  require_relative "routes/cdb"
 
   route do |r|
     r.multi_route
@@ -14,6 +15,10 @@ class App < Roda
 
     r.on "m" do
       r.route "m"
+    end
+
+    r.on "cdb" do
+      r.route "cdb"
     end
 
     r.root do

@@ -2,6 +2,7 @@
 
 source "https://rubygems.org"
 
+gem "cdb-crawlr", github: "comics-apps/cdb-crawlr"
 gem "comic_vine-api"
 gem "dotenv"
 gem "marvel-api"
