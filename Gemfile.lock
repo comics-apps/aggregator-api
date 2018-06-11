@@ -6,6 +6,8 @@ GEM
     dotenv (2.4.0)
     faraday (0.15.2)
       multipart-post (>= 1.2, < 3)
+    marvel-api (0.1.0)
+      faraday
     multipart-post (2.0.0)
     rack (2.0.5)
     roda (3.9.0)
@@ -17,6 +19,7 @@ PLATFORMS
 DEPENDENCIES
   comic_vine-api
   dotenv
+  marvel-api
   roda
 
 BUNDLED WITH
