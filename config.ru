@@ -1,4 +1,8 @@
+require "comic_vine/api"
+require "dotenv"
 require "roda"
+
+Dotenv.load
 
 require_relative "app"
 

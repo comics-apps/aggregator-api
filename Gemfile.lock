@@ -1,6 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    comic_vine-api (0.1.1)
+      faraday
+    dotenv (2.4.0)
+    faraday (0.15.2)
+      multipart-post (>= 1.2, < 3)
+    multipart-post (2.0.0)
     rack (2.0.5)
     roda (3.9.0)
       rack
@@ -9,6 +15,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  comic_vine-api
+  dotenv
   roda
 
 BUNDLED WITH
