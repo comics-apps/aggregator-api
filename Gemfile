@@ -7,3 +7,7 @@ gem "comic_vine-api"
 gem "dotenv"
 gem "marvel-api"
 gem "roda"
+
+# Database
+gem "mysql2"
+gem "sequel"

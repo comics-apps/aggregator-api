@@ -18,11 +18,13 @@ GEM
       faraday
     mini_portile2 (2.3.0)
     multipart-post (2.0.0)
+    mysql2 (0.5.1)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
     rack (2.0.5)
     roda (3.9.0)
       rack
+    sequel (5.9.0)
     thor (0.20.0)
 
 PLATFORMS
@@ -33,7 +35,9 @@ DEPENDENCIES
   comic_vine-api
   dotenv
   marvel-api
+  mysql2
   roda
+  sequel
 
 BUNDLED WITH
    1.16.1

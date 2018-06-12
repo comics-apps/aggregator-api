@@ -3,6 +3,7 @@ class App < Roda
   plugin :multi_route
 
   require_relative "routes/cv"
+  require_relative "routes/gcd"
   require_relative "routes/m"
   require_relative "routes/cdb"
 
@@ -11,6 +12,10 @@ class App < Roda
 
     r.on "cv" do
       r.route "cv"
+    end
+
+    r.on "gcd" do
+      r.route "gcd"
     end
 
     r.on "m" do
