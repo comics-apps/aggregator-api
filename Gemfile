@@ -11,3 +11,7 @@ gem "roda"
 # Database
 gem "mysql2"
 gem "sequel"
+
+group :development do
+  gem "shotgun"
+end

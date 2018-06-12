@@ -33,3 +33,9 @@
 
     1. Find anonymous proxy which you can use to open http://www.comicbookdb.com
     2. Save proxy as `PROXY=http://[IP]:[PORT]` in `.env`
+
+1. Run API
+    ```
+    $ bundle exec rackup
+    $ bundle exec shotgun config.ru # with hot reload
+    ```
