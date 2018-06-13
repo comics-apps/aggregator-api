@@ -1,6 +1,6 @@
-require "cdb-crawlr"
 require "comic_vine/api"
 require "dotenv"
+require "faraday"
 require "marvel/api"
 require "roda"
 

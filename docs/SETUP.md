@@ -31,8 +31,8 @@
 
 1. Connect with ComicBookDB
 
-    1. Find anonymous proxy which you can use to open http://www.comicbookdb.com
-    2. Save proxy as `PROXY=http://[IP]:[PORT]` in `.env`
+    1. Deploy ComicBookDB wrapper to US zone server
+    1. Set `CBDB_HOST`, `CBDB_BASIC_USER`, `CBDB_BASIC_PASSWORD` in `.env`
 
 1. Run API
     ```
