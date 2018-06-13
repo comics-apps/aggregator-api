@@ -1,3 +1,5 @@
+require_relative "../presenters/series_presenter"
+
 module GCD
   module SearchSeries
     def self.call(query, offset)
@@ -8,25 +10,19 @@ module GCD
 
       publishers = publishers.each do |p|
         country = countries[p[:country_id]][0]
-        country.each do |k, v|
-          next if k == :id
-          p[:"country_#{k}"] = v
-        end
+        p[:country] = country
       end.group_by { |r| r[:id] }
 
       series.each do |s|
-        merge_data(s, publishers, :publisher_id, :publisher_)
-        merge_data(s, countries, :country_id, :country_)
-        merge_data(s, languages, :language_id, :language_)
-      end
+        merge_data(s, publishers, :publisher_id, :publisher)
+        merge_data(s, countries, :country_id, :country)
+        merge_data(s, languages, :language_id, :language)
+      end.map{ |el| GCD::SeriesPresenter.call(el) }
     end
 
-    def self.merge_data(single_series, relations, field, prefix)
-      related_data = relations[single_series[field]][0]
-      related_data.each do |k, v|
-        next if [:id, :country_id].include?(k)
-        single_series[:"#{prefix}#{k}"] = v
-      end
+    def self.merge_data(single_series, relations, id_field, field)
+      related_data = relations[single_series[id_field]][0]
+      single_series[field] = related_data
     end
 
     def self.load_series(query, offset)

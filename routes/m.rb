@@ -1,4 +1,4 @@
-require_relative "../lib/m/search_series"
+require_relative "../lib/m/operations/search_series"
 
 class App < Roda
   route("m") do |r|
