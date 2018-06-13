@@ -15,3 +15,11 @@ gem "sequel"
 group :development do
   gem "shotgun"
 end
+
+group :test do
+  gem "byebug"
+  gem "rack-test"
+  gem "rspec"
+  gem "vcr"
+  gem "webmock"
+end

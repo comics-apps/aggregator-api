@@ -1,3 +1,13 @@
+require "comic_vine/api"
+require "dotenv"
+require "faraday"
+require "marvel/api"
+require "roda"
+
+Dotenv.load
+
+require_relative "lib/database_setup"
+
 class App < Roda
   plugin :json
   plugin :multi_route

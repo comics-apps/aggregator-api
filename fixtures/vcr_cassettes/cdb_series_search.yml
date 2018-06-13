@@ -1,0 +1,144 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cbd-42.herokuapp.com/series?query=foo
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Basic <BASIC_AUTH>
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: 'OK '
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '10735'
+      Server:
+      - WEBrick/1.3.1 (Ruby/2.4.4/2018-03-28)
+      Date:
+      - Wed, 13 Jun 2018 20:11:20 GMT
+      Via:
+      - 1.1 vegur
+    body:
+      encoding: UTF-8
+      string: '[{"cdb_id":1092,"name":"Wildguard: Fool''s Gold","publisher":"Image
+        Comics","start_date":"2005"},{"cdb_id":2037,"name":"The Devil''s Footprints","publisher":"Dark
+        Horse Comics","start_date":"2003"},{"cdb_id":3280,"name":"Blue Monday: Nobody''s
+        Fool","publisher":"Oni Press","start_date":"2003"},{"cdb_id":3424,"name":"Foolkiller","publisher":"Marvel","start_date":"1990"},{"cdb_id":3660,"name":"The
+        Barefoot Serpent","publisher":"Top Shelf Productions","start_date":"2003"},{"cdb_id":4065,"name":"Foofur","publisher":"Marvel","start_date":"1987"},{"cdb_id":7040,"name":"The
+        Foot Soldiers","publisher":"Dark Horse Comics","start_date":"1996"},{"cdb_id":7060,"name":"Foot
+        Soldiers","publisher":"Image Comics","start_date":"1997"},{"cdb_id":8446,"name":"Jar
+        of Fools","publisher":"Black Eye Productions","start_date":"1995"},{"cdb_id":8539,"name":"Cap''n
+        Quick & A Foozle","publisher":"Eclipse Comics","start_date":"1984"},{"cdb_id":8540,"name":"The
+        Foozle","publisher":"Eclipse Comics","start_date":"1985"},{"cdb_id":8764,"name":"Ship
+        Of Fools","publisher":"NBM Publishing, Inc.","start_date":"1999"},{"cdb_id":9634,"name":"Bigfoot","publisher":"IDW
+        Publishing","start_date":"2005"},{"cdb_id":9699,"name":"Jar of Fools","publisher":"Drawn
+        & Quarterly","start_date":"2003"},{"cdb_id":10330,"name":"Little Red Hot:
+        Chane of Fools","publisher":"Image Comics","start_date":"1999"},{"cdb_id":10731,"name":"Footman
+        15:Fairy Fire","publisher":"Bald Guy Studios","start_date":"2002"},{"cdb_id":12768,"name":"The
+        Foot Soldiers","publisher":"AiT/Planet Lar","start_date":"2001"},{"cdb_id":12934,"name":"Food
+        for Thought","publisher":"Flying Pig","start_date":"1985"},{"cdb_id":12993,"name":"350
+        Years of American Dairy Foods","publisher":"American Diary","start_date":"1957"},{"cdb_id":13129,"name":"Howard
+        Cruse''s Barefootz The Comix Book Stories","publisher":"Renegade Press","start_date":"1986"},{"cdb_id":14132,"name":"Little
+        Lotta Foodland","publisher":"Harvey Comics","start_date":"1963"},{"cdb_id":14498,"name":"Fool''s
+        Gold","publisher":"Tokyopop","start_date":"2006"},{"cdb_id":15398,"name":"John
+        Difool","publisher":"Carlsen Comics","start_date":"1982"},{"cdb_id":15774,"name":"Foolkiller","publisher":"Marvel","start_date":"2007"},{"cdb_id":16231,"name":"Franklin
+        Richards: Fall Football Fiasco!","publisher":"Marvel","start_date":"2008"},{"cdb_id":16561,"name":"Hulk
+        vs. Fin Fang Foom","publisher":"Marvel","start_date":"2008"},{"cdb_id":19255,"name":"Zen
+        Intergalactic Ninja April Fool''s Special","publisher":"Parody Press","start_date":"1994"},{"cdb_id":19559,"name":"Foolkiller:
+        White Angels","publisher":"Marvel","start_date":"2008"},{"cdb_id":19956,"name":"Ali
+        Baba: Fooling the Forty Thieves: An Arabian Tale","publisher":"Lerner Publishing
+        Group","start_date":"2008"},{"cdb_id":20767,"name":"Bigfoot - I Not Dead","publisher":"Penguin
+        Group","start_date":"2008"},{"cdb_id":21279,"name":"The Big Bigfoot Book","publisher":"Mojo
+        Press","start_date":"1996"},{"cdb_id":22744,"name":"Jughead''s Soul Food","publisher":"Fleming
+        H. Revell","start_date":"1979"},{"cdb_id":22921,"name":"Early Barefootz","publisher":"Fantagraphics
+        Books","start_date":"1990"},{"cdb_id":23238,"name":"Franklin Richards: April
+        Fools","publisher":"Marvel","start_date":"2009"},{"cdb_id":23324,"name":"Grimm
+        Fairy Tales: April Fools'' Edition","publisher":"Zenescope Entertainment","start_date":"2009"},{"cdb_id":23468,"name":"Red
+        Blinds the Foolish","publisher":"Aurora Publishing","start_date":"2008"},{"cdb_id":23577,"name":"FOOM
+        Magazine","publisher":"Marvel","start_date":"1973"},{"cdb_id":23771,"name":"Me
+        Write Book: It Bigfoot Memoir","publisher":"Penguin Group","start_date":"2005"},{"cdb_id":23772,"name":"In
+        Me Own Words; Autobiography of Bigfoot","publisher":"Penguin Group","start_date":"2003"},{"cdb_id":24002,"name":"Barefoot
+        Waltz","publisher":"Digital Manga Publishing","start_date":"2008"},{"cdb_id":24493,"name":"Ship
+        of Fools","publisher":"Image Comics","start_date":"1997"},{"cdb_id":24983,"name":"Jar
+        of Fools","publisher":"Penny Dreadful Press","start_date":"1994"},{"cdb_id":25277,"name":"Little
+        Bunny Foo Foo","publisher":"","start_date":"2007"},{"cdb_id":25881,"name":"Seafood","publisher":"","start_date":"2004"},{"cdb_id":26013,"name":"My
+        Life As A Foot","publisher":"Conundrum Press","start_date":"1999"},{"cdb_id":26301,"name":"Football
+        Heroes","publisher":"Personality Comics, Inc.","start_date":"1992"},{"cdb_id":26353,"name":"Star
+        Trek: Deep Space Nine: Fool''s Gold","publisher":"IDW Publishing","start_date":"2009"},{"cdb_id":26493,"name":"Dearne
+        High''s ''Fool''s Gold'' ","publisher":"Grosvenor House Publishing","start_date":"2009"},{"cdb_id":26596,"name":"Footnotes
+        in Gaza","publisher":"Henry Holt and Company","start_date":"2009"},{"cdb_id":27229,"name":"Foo","publisher":"¡#$%&!
+        Comics","start_date":"2011"},{"cdb_id":28058,"name":"Knightfool: The Fall
+        of The Splatman","publisher":"Parody Press","start_date":"1993"},{"cdb_id":29080,"name":"Ship
+        of Fools","publisher":"Caliber","start_date":"1996"},{"cdb_id":29780,"name":"Welcome
+        To Tranquility: One Foot In The Grave","publisher":"DC Comics","start_date":"2010"},{"cdb_id":32154,"name":"Footprints","publisher":"215
+        Ink","start_date":"2011"},{"cdb_id":32162,"name":"Captain Tacolicious and
+        the Temple of Food","publisher":"","start_date":"2010"},{"cdb_id":32718,"name":"Jim
+        Butcher''s The Dresden Files: Fool Moon","publisher":"Dynamite Entertainment","start_date":"2011"},{"cdb_id":32865,"name":"Footman15:
+        Therapy","publisher":"","start_date":"1998"},{"cdb_id":34440,"name":"Adventure
+        Underfoot","publisher":"Self-published","start_date":"2008"},{"cdb_id":34814,"name":"Barefootz
+        Funnies","publisher":"Krupp Comics Works","start_date":"1975"},{"cdb_id":35697,"name":"Bigfoot","publisher":"Drawn
+        & Quarterly","start_date":"2010"},{"cdb_id":36175,"name":"Alien (heart) Bigfoot","publisher":"Fiction
+        House Mafia","start_date":"2011"},{"cdb_id":36421,"name":"Supersized: Strange
+        Tales from a Fast-Food Culture","publisher":"Dark Horse Comics","start_date":"2011"},{"cdb_id":37104,"name":"The
+        Foot Soldiers","publisher":"Image Comics","start_date":"2012"},{"cdb_id":37113,"name":"Monkey
+        Food","publisher":"Fantagraphics Books","start_date":"1999"},{"cdb_id":37785,"name":"Foodboy","publisher":"Fantagraphics
+        Books","start_date":"2004"},{"cdb_id":37858,"name":"Not Love But Delicious
+        Foods Make Me So Happy!","publisher":"Hachette Book Group USA","start_date":"2010"},{"cdb_id":38095,"name":"John
+        Difool","publisher":"Ehapa Verlag","start_date":"1996"},{"cdb_id":38096,"name":"John
+        Difool","publisher":"Carlsen Comics Verlag","start_date":"1983"},{"cdb_id":38215,"name":"Food
+        Fight","publisher":"Thorby Enterprises, Inc.","start_date":"1999"},{"cdb_id":38848,"name":"Bigfoot:
+        Sword of the Earthman","publisher":"Brewhouse Comics","start_date":"2012"},{"cdb_id":39056,"name":"Teenage
+        Mutant Ninja Turtles: The Secret History of the Foot Clan","publisher":"IDW
+        Publishing","start_date":"2012"},{"cdb_id":39262,"name":"Foodang","publisher":"Continum
+        Comics","start_date":"1994"},{"cdb_id":41077,"name":"Footlicker","publisher":"Fantagraphics
+        Books","start_date":"2002"},{"cdb_id":41817,"name":"Charlton Sport Library:
+        Professional Football","publisher":"Charlton","start_date":"1970"},{"cdb_id":41963,"name":"Thor:
+        Crown of Fools","publisher":"Marvel","start_date":"2013"},{"cdb_id":42021,"name":"Attack
+        of the 100-Foot Booger","publisher":"Oni Press","start_date":"2013"},{"cdb_id":42023,"name":"Sketch
+        Monsters: Attack of the 100-Foot Booger","publisher":"Oni Press","start_date":"2013"},{"cdb_id":42035,"name":"Football
+        Thrills","publisher":"Ziff-Davis Publishing","start_date":"1951"},{"cdb_id":42966,"name":"Sheep
+        of Fools","publisher":"Fantagraphics Books","start_date":"2005"},{"cdb_id":43884,"name":"Cooking
+        with Food","publisher":"Self-published","start_date":"2013"},{"cdb_id":43960,"name":"The
+        5ive Footers","publisher":"Self-published","start_date":"2010"},{"cdb_id":45622,"name":"What
+        Fools These Mortals Be!: The Story of Puck Magazine","publisher":"IDW Publishing","start_date":"2014"},{"cdb_id":46114,"name":"Barefoot
+        Gen","publisher":"Last Gasp","start_date":"2004"},{"cdb_id":46508,"name":"#foodcrisis","publisher":"Self-published","start_date":"2014"},{"cdb_id":46926,"name":"Archie
+        Comics Spectacular: Food Fight","publisher":"Archie Comic Publications Inc.","start_date":"2015"},{"cdb_id":47082,"name":"The
+        Foot Soldiers","publisher":"Asylum Press","start_date":"1995"},{"cdb_id":47860,"name":"Bigfoot:
+        A North American Legend","publisher":"Rosen Classroom","start_date":"2007"},{"cdb_id":48670,"name":"Sgt.
+        Sasquatch: The Bigfoot of Liberty","publisher":"gpaulr.com","start_date":"2013"},{"cdb_id":49891,"name":"Portfoolio","publisher":"McArthur
+        & Company Publishing","start_date":"1985"},{"cdb_id":50452,"name":"Bigfoot
+        Boy","publisher":"Kids Can Press","start_date":"2012"},{"cdb_id":50984,"name":"Harley
+        Quinn and the Suicide Squad April Fools'' Special","publisher":"DC Comics","start_date":"2016"},{"cdb_id":51231,"name":"Footprints:
+        Bad Luck Charm","publisher":"Soup Dad Comics","start_date":"2016"},{"cdb_id":51922,"name":"Fool''s
+        Gold","publisher":"Self-published","start_date":"2016"},{"cdb_id":52109,"name":"Food
+        Wars!: Shokugeki no Soma","publisher":"Viz Media","start_date":"2014"},{"cdb_id":52235,"name":"Bigfoot:
+        Sword of the Earthman","publisher":"Action Lab Comics","start_date":"2015"},{"cdb_id":52940,"name":"Barefoot
+        Gen","publisher":"Last Gasp","start_date":"2016"},{"cdb_id":53044,"name":"Food
+        Baby","publisher":"ShortBox","start_date":"2016"},{"cdb_id":53759,"name":"Foolkiller","publisher":"Marvel","start_date":"2017"},{"cdb_id":55213,"name":"The
+        Three Stooges: April Fools'' Day Special","publisher":"American Mythology
+        Productions","start_date":"2017"},{"cdb_id":55272,"name":"Grimm Tales Of Terror
+        April Fools'' Editions","publisher":"Zenescope Entertainment","start_date":"2017"},{"cdb_id":56113,"name":"Foolish
+        Questions and Other Odd Observations","publisher":"Sunday Press Books","start_date":"2017"},{"cdb_id":56789,"name":"Nameless
+        Fools","publisher":"Self-published","start_date":"2016"},{"cdb_id":57207,"name":"FOOM
+        Magazine","publisher":"Marvel","start_date":"2017"},{"cdb_id":57410,"name":"Foodang","publisher":"August
+        House, Inc.","start_date":"1995"},{"cdb_id":57494,"name":"Mystery Afoot","publisher":"Self-published","start_date":"2017"},{"cdb_id":57786,"name":"Food
+        First Comics","publisher":"Educomics","start_date":"1982"},{"cdb_id":58096,"name":"100%
+        Marvel MAX: Foolkiller","publisher":"Panini Comics Italia","start_date":"2009"},{"cdb_id":59127,"name":"Foofur","publisher":"Juniorpress","start_date":"1987"},{"cdb_id":59546,"name":"The
+        Man With Footprints On His Back","publisher":"James Rubino","start_date":"2018"}]'
+    http_version: 
+  recorded_at: Wed, 13 Jun 2018 20:11:20 GMT
+recorded_with: VCR 4.0.0
