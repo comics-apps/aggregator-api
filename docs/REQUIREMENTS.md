@@ -4,7 +4,7 @@ Series Search
 * name
 * start year
 * number of issues
-* publisher name
+* publisher (id, name)
 * country
 * language
 * issue count

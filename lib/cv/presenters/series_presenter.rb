@@ -8,7 +8,10 @@ module CV
         name: entity["name"],
         start_year: entity["start_year"],
         issue_count: entity["count_of_issues"],
-        publisher: publisher["name"],
+        publisher: {
+          id: publisher["id"],
+          name: publisher["name"]
+        },
         country: nil,
         language: nil
       }

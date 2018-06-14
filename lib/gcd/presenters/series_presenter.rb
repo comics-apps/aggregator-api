@@ -10,7 +10,10 @@ module GCD
         name: entity[:name],
         start_year: entity[:year_began].to_s,
         issue_count: entity[:issue_count],
-        publisher: publisher[:name],
+        publisher: {
+          id: publisher[:id],
+          name: publisher[:name]
+        },
         country: country[:name],
         language: language[:name]
       }

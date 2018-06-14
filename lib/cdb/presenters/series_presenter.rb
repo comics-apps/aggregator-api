@@ -6,7 +6,10 @@ module CDB
         name: entity["name"],
         start_year: entity["start_date"],
         issue_count: nil,
-        publisher: entity["publisher"],
+        publisher: {
+          id: nil,
+          name: entity["publisher"]
+        },
         country: nil,
         language: nil
       }

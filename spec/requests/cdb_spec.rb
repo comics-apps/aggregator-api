@@ -15,6 +15,10 @@ RSpec.describe App, type: :request do
         expect(entity["id"]).not_to be_nil
         expect(entity["name"]).not_to be_nil
         expect(entity["publisher"]).not_to be_nil
+        expect(entity["publisher"]).to be_a(Hash)
+        expect(entity["publisher"].keys).to match_array(%w(id name))
+        expect(entity["publisher"]["id"]).to be_nil
+        expect(entity["publisher"]["name"]).not_to be_nil
         expect(entity["start_year"]).not_to be_nil
         expect(entity["start_year"]).to be_a(String)
 

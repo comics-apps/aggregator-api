@@ -6,7 +6,10 @@ module M
         name: entity["title"],
         start_year: entity["startYear"].to_s,
         issue_count: nil,
-        publisher: "Marvel",
+        publisher: {
+          id: nil,
+          name: "Marvel"
+        },
         country: nil,
         language: nil
       }
