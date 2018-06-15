@@ -6,6 +6,7 @@ gem "comic_vine-api"
 gem "dotenv"
 gem "faraday"
 gem "marvel-api"
+gem "rack-cors"
 gem "roda"
 
 # Database

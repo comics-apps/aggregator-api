@@ -17,10 +17,9 @@ GEM
       faraday
     multipart-post (2.0.0)
     mysql2 (0.5.1)
-    nokogiri (1.8.2)
-      mini_portile2 (~> 2.3.0)
     public_suffix (3.0.2)
     rack (2.0.5)
+    rack-cors (1.0.2)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
     roda (3.9.0)
@@ -42,7 +41,6 @@ GEM
     sequel (5.9.0)
     shotgun (0.9.2)
       rack (>= 1.0)
-    thor (0.20.0)
     vcr (4.0.0)
     webmock (3.4.2)
       addressable (>= 2.3.6)
@@ -54,12 +52,12 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  cdb-crawlr!
   comic_vine-api
   dotenv
   faraday
   marvel-api
   mysql2
+  rack-cors
   rack-test
   roda
   rspec
