@@ -4,7 +4,7 @@ RSpec.describe App, type: :request do
   describe "CV" do
     describe "Series" do
       it "call index path" do
-        VCR.use_cassette(:cv_series_search) do
+        VCR.use_cassette(:cv_series_index) do
           get "/cv/series", q: "foo", offset: 0
         end
 

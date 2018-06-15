@@ -4,14 +4,12 @@ RSpec.describe App, type: :request do
   describe "M" do
     describe "Series" do
       it "call index path" do
-        VCR.use_cassette(:m_series_search) do
+        VCR.use_cassette(:m_series_index) do
           get "/m/series", q: "foo", offset: 0
         end
 
-        body = json_body
-
-        expect(body).to be_an(Array)
-        expect(body).not_to be_empty
+        expect(json_body).to be_an(Array)
+        expect(json_body).not_to be_empty
         entity = json_body[0]
         expect(entity.keys).to match_array(%w{country id issue_count language name publisher start_year})
         expect(entity["id"]).not_to be_nil

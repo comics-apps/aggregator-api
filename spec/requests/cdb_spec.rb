@@ -4,7 +4,7 @@ RSpec.describe App, type: :request do
   describe "CDB" do
     describe "Series" do
       it "call index path" do
-        VCR.use_cassette(:cdb_series_search) do
+        VCR.use_cassette(:cdb_series_index) do
           get "/cdb/series", q: "foo"
         end
 
