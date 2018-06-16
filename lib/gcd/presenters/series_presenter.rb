@@ -14,6 +14,7 @@ module GCD
           id: publisher[:id],
           name: publisher[:name]
         },
+        external_url: "https://www.comics.org/series/#{entity[:id]}/",
         country: country[:name],
         language: language[:name]
       }

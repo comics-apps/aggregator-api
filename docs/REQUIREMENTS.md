@@ -7,6 +7,7 @@ Series Index
 * publisher (id, name)
 * country
 * language
+* external_url
 * issue count
 
 Series Show

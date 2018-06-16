@@ -12,6 +12,7 @@ module CV
           id: publisher["id"],
           name: publisher["name"]
         },
+        external_url: entity["site_detail_url"],
         country: nil,
         language: nil
       }

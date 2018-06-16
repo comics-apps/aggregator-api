@@ -10,6 +10,7 @@ module CDB
           id: nil,
           name: entity["publisher"]
         },
+        external_url: "http://www.comicbookdb.com/title.php?ID=#{entity["cdb_id"]}",
         country: nil,
         language: nil
       }
