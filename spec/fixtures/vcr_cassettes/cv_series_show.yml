@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://comicvine.gamespot.com/api/volume/4050-3845/?api_key=<API_KEY>&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - device_view=full; expires=Tue, 17-Jul-2018 11:11:12 GMT; Max-Age=2592000;
+        path=/; HttpOnly
+      - satcv=71ca0fbf86b4c1ebcb7e1e9556655c5b; path=/; domain=.comicvine.gamespot.com;
+        HttpOnly
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sun, 17 Jun 2018 11:11:12 GMT
+    body:
+      encoding: UTF-8
+      string: '{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-3845\/","count_of_issues":6,"date_added":"2008-06-06
+        11:08:17","date_last_updated":"2012-05-05 03:15:24","deck":null,"description":"<p>From  the
+        popular TV series, Foofur got his very  own comic-book series as part of Marvel
+        Comics'' Star Comics imprint. It lasted for only 6 issues.<\/p>","first_issue":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94610\/","id":94610,"name":null,"issue_number":"1"},"id":3845,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/61615-3845-94610-1-foofur.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/61615-3845-94610-1-foofur.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/61615-3845-94610-1-foofur.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/61615-3845-94610-1-foofur.jpg","small_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/61615-3845-94610-1-foofur.jpg","super_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/61615-3845-94610-1-foofur.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/61615-3845-94610-1-foofur.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/61615-3845-94610-1-foofur.jpg","original_url":"https:\/\/comicvine.gamespot.com\/api\/image\/original\/61615-3845-94610-1-foofur.jpg","image_tags":"All
+        Images"},"issues":[{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94610\/","id":94610,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-1\/4000-94610\/","issue_number":"1"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94611\/","id":94611,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-2\/4000-94611\/","issue_number":"2"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94612\/","id":94612,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-3\/4000-94612\/","issue_number":"3"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94613\/","id":94613,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-4\/4000-94613\/","issue_number":"4"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94614\/","id":94614,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-5\/4000-94614\/","issue_number":"5"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94615\/","id":94615,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-6\/4000-94615\/","issue_number":"6"}],"last_issue":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94615\/","id":94615,"name":null,"issue_number":"6"},"name":"Foofur","publisher":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-3427\/","id":3427,"name":"Star
+        Comics"},"site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur\/4050-3845\/","start_year":"1987"},"version":"1.0"}'
+    http_version: 
+  recorded_at: Sun, 17 Jun 2018 11:11:12 GMT
+recorded_with: VCR 4.0.0

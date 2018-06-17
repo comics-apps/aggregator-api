@@ -20,4 +20,4 @@ Series Show
 * country
 * language
 * issue count
-* issues (id, name, number)
+* issues (id, name, number, external_url)

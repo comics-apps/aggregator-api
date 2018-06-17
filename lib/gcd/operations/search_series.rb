@@ -1,5 +1,3 @@
-require_relative "../presenters/series_presenter"
-
 module GCD
   module SearchSeries
     def self.call(query, offset)
@@ -17,7 +15,7 @@ module GCD
         merge_data(s, publishers, :publisher_id, :publisher)
         merge_data(s, countries, :country_id, :country)
         merge_data(s, languages, :language_id, :language)
-      end.map{ |el| GCD::SeriesPresenter.call(el) }
+      end.map{ |el| GCD::SimpleSeriesPresenter.call(el) }
     end
 
     def self.merge_data(single_series, relations, id_field, field)

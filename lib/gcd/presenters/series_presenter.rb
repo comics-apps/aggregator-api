@@ -1,23 +1,18 @@
 module GCD
   module SeriesPresenter
     def self.call(entity)
-      publisher = entity[:publisher] || {}
-      country = entity[:country] || {}
-      language = entity[:language] || {}
+      GCD::SimpleSeriesPresenter.call(entity).tap do |h|
+        h[:issues] = entity[:issues]
+                       .map{ |i| GCD::SimpleIssuePresenter.call(i) }
+                       .sort_by do |i|
 
-      {
-        id: entity[:id],
-        name: entity[:name],
-        start_year: entity[:year_began].to_s,
-        issue_count: entity[:issue_count],
-        publisher: {
-          id: publisher[:id],
-          name: publisher[:name]
-        },
-        external_url: "https://www.comics.org/series/#{entity[:id]}/",
-        country: country[:name],
-        language: language[:name]
-      }
+          begin
+            Integer(i[:number]).to_s.rjust(4, "0")
+          rescue
+            i[:number]
+          end
+        end
+      end
     end
   end
 end

@@ -1,5 +1,3 @@
-require_relative "../presenters/series_presenter"
-
 module M
   module SearchSeries
     def self.call(query, offset)
@@ -7,7 +5,7 @@ module M
       service
         .series(titleStartsWith: query, offset: offset)
         .results
-        .map{ |el| M::SeriesPresenter.call(el) }
+        .map{ |el| M::SimpleSeriesPresenter.call(el) }
     end
   end
 end

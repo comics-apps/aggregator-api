@@ -1,5 +1,3 @@
-require_relative "../presenters/series_presenter"
-
 module CV
   module SearchSeries
     def self.call(query, offset)
@@ -7,7 +5,7 @@ module CV
       service
         .volumes(filter: "name:#{query}", offset: offset)
         .results
-        .map{ |el| CV::SeriesPresenter.call(el) }
+        .map{ |el| CV::SimpleSeriesPresenter.call(el) }
     end
   end
 end

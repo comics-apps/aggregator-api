@@ -1,19 +1,18 @@
 module CDB
   module SeriesPresenter
     def self.call(entity)
-      {
-        id: entity["cdb_id"],
-        name: entity["name"],
-        start_year: entity["start_date"],
-        issue_count: nil,
-        publisher: {
-          id: nil,
-          name: entity["publisher"]
-        },
-        external_url: "http://www.comicbookdb.com/title.php?ID=#{entity["cdb_id"]}",
-        country: nil,
-        language: nil
-      }
+      CDB::SimpleSeriesPresenter.call(entity).tap do |h|
+        h[:issues] = entity["issues"]
+                       .map{ |i| CDB::SimpleIssuePresenter.call(i) }
+                       .sort_by do |i|
+
+          begin
+            Integer(i[:number]).to_s.rjust(4, "0")
+          rescue
+            i[:number]
+          end
+        end
+      end
     end
   end
 end

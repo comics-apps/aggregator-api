@@ -1,21 +1,11 @@
 module CV
   module SeriesPresenter
     def self.call(entity)
-      publisher = entity["publisher"] || {}
-
-      {
-        id: entity["id"],
-        name: entity["name"],
-        start_year: entity["start_year"],
-        issue_count: entity["count_of_issues"],
-        publisher: {
-          id: publisher["id"],
-          name: publisher["name"]
-        },
-        external_url: entity["site_detail_url"],
-        country: nil,
-        language: nil
-      }
+      CV::SimpleSeriesPresenter.call(entity).tap do |h|
+        h[:issues] = entity["issues"]
+                       .map{ |i| CV::SimpleIssuePresenter.call(i) }
+                       .sort_by{ |i| i[:number].to_i }
+      end
     end
   end
 end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://gateway.marvel.com/v1/public/series?apikey=<PUBLIC_KEY>&hash=f75dadbde9f0507a0501bbf4b1f3f60f&offset=0&titleStartsWith=foo&ts=1528920683
+    uri: http://gateway.marvel.com/v1/public/series?apikey=<PUBLIC_KEY>&hash=78554f565f77154710e3a8bce8fba862&offset=0&titleStartsWith=foo&ts=1529234102
     body:
       encoding: US-ASCII
       string: ''
@@ -19,11 +19,11 @@ http_interactions:
       message: OK
     headers:
       Etag:
-      - ee83d2cf4226080f97f85da0ce69b51344d265fd
+      - 925fc1b1aead62469e057d1fe17c94da956396a9
       Content-Type:
       - application/json; charset=utf-8
       Date:
-      - Wed, 13 Jun 2018 20:19:18 GMT
+      - Sun, 17 Jun 2018 11:19:16 GMT
       Connection:
       - keep-alive
       Transfer-Encoding:
@@ -32,28 +32,7 @@ http_interactions:
       encoding: UTF-8
       string: '{"code":200,"status":"Ok","copyright":"© 2018 MARVEL","attributionText":"Data
         provided by Marvel. © 2018 MARVEL","attributionHTML":"<a href=\"http://marvel.com\">Data
-        provided by Marvel. © 2018 MARVEL</a>","etag":"ee83d2cf4226080f97f85da0ce69b51344d265fd","data":{"offset":0,"limit":20,"total":6,"count":6,"results":[{"id":22413,"title":"Foolkiller
-        (2016 - Present)","description":null,"resourceURI":"http://gateway.marvel.com/v1/public/series/22413","urls":[{"type":"detail","url":"http://marvel.com/comics/series/22413/foolkiller_2016_-_present?utm_campaign=apiRef&utm_source=<PUBLIC_KEY>"}],"startYear":2016,"endYear":2099,"rating":"","type":"","modified":"2018-02-22T15:01:53-0500","thumbnail":{"path":"http://i.annihil.us/u/prod/marvel/i/mg/6/40/5a8f219c832c0","extension":"jpg"},"creators":{"available":5,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/creators","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/creators/12794","name":"Max
-        Bemis","role":"writer"},{"resourceURI":"http://gateway.marvel.com/v1/public/creators/10432","name":"Dave
-        Johnson","role":"penciller (cover)"},{"resourceURI":"http://gateway.marvel.com/v1/public/creators/13027","name":"Darren
-        Shan","role":"editor"},{"resourceURI":"http://gateway.marvel.com/v1/public/creators/8822","name":"Jordan
-        White","role":"editor"},{"resourceURI":"http://gateway.marvel.com/v1/public/creators/11560","name":"Dalibor
-        Talajic","role":"penciller"}],"returned":5},"characters":{"available":1,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/characters","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/characters/1009268","name":"Deadpool"}],"returned":1},"stories":{"available":10,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/stories","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131775","name":"cover
-        from Foolkiller (2016) #1","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131776","name":"story
-        from Foolkiller (2016) #1","type":"interiorStory"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131777","name":"cover
-        from Foolkiller (2016) #2","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131778","name":"story
-        from Foolkiller (2016) #2","type":"interiorStory"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131779","name":"cover
-        from Foolkiller (2016) #3","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131780","name":"story
-        from Foolkiller (2016) #3","type":"interiorStory"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131781","name":"cover
-        from Foolkiller (2016) #4","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131782","name":"story
-        from Foolkiller (2016) #4","type":"interiorStory"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131783","name":"cover
-        from Foolkiller (2016) #5","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131784","name":"story
-        from Foolkiller (2016) #5","type":"interiorStory"}],"returned":10},"comics":{"available":5,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/comics","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60653","name":"Foolkiller
-        (2016) #1"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60654","name":"Foolkiller
-        (2016) #2"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60655","name":"Foolkiller
-        (2016) #3"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60656","name":"Foolkiller
-        (2016) #4"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60657","name":"Foolkiller
-        (2016) #5"}],"returned":5},"events":{"available":0,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/events","items":[],"returned":0},"next":null,"previous":null},{"id":2819,"title":"Foolkiller
+        provided by Marvel. © 2018 MARVEL</a>","etag":"925fc1b1aead62469e057d1fe17c94da956396a9","data":{"offset":0,"limit":20,"total":6,"count":6,"results":[{"id":2819,"title":"Foolkiller
         (2007 - 2008)","description":null,"resourceURI":"http://gateway.marvel.com/v1/public/series/2819","urls":[{"type":"detail","url":"http://marvel.com/comics/series/2819/foolkiller_2007_-_2008?utm_campaign=apiRef&utm_source=<PUBLIC_KEY>"}],"startYear":2007,"endYear":2008,"rating":"EXPLICIT
         CONTENT","type":"limited","modified":"-0001-11-30T00:00:00-0500","thumbnail":{"path":"http://i.annihil.us/u/prod/marvel/i/mg/3/60/4bc392662c076","extension":"jpg"},"creators":{"available":7,"collectionURI":"http://gateway.marvel.com/v1/public/series/2819/creators","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/creators/5251","name":"Joe
         Caramagna","role":"letterer"},{"resourceURI":"http://gateway.marvel.com/v1/public/creators/452","name":"Chris
@@ -77,7 +56,28 @@ http_interactions:
         (2007) #2"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/17386","name":"Foolkiller
         (2007) #3"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/17630","name":"Foolkiller
         (2007) #4"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/21215","name":"Foolkiller
-        (2007) #5"}],"returned":5},"events":{"available":0,"collectionURI":"http://gateway.marvel.com/v1/public/series/2819/events","items":[],"returned":0},"next":null,"previous":null},{"id":5382,"title":"Foolkiller:
+        (2007) #5"}],"returned":5},"events":{"available":0,"collectionURI":"http://gateway.marvel.com/v1/public/series/2819/events","items":[],"returned":0},"next":null,"previous":null},{"id":22413,"title":"Foolkiller
+        (2016 - Present)","description":null,"resourceURI":"http://gateway.marvel.com/v1/public/series/22413","urls":[{"type":"detail","url":"http://marvel.com/comics/series/22413/foolkiller_2016_-_present?utm_campaign=apiRef&utm_source=<PUBLIC_KEY>"}],"startYear":2016,"endYear":2099,"rating":"","type":"","modified":"2018-02-22T15:01:53-0500","thumbnail":{"path":"http://i.annihil.us/u/prod/marvel/i/mg/6/40/5a8f219c832c0","extension":"jpg"},"creators":{"available":5,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/creators","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/creators/12794","name":"Max
+        Bemis","role":"writer"},{"resourceURI":"http://gateway.marvel.com/v1/public/creators/10432","name":"Dave
+        Johnson","role":"penciller (cover)"},{"resourceURI":"http://gateway.marvel.com/v1/public/creators/13027","name":"Darren
+        Shan","role":"editor"},{"resourceURI":"http://gateway.marvel.com/v1/public/creators/8822","name":"Jordan
+        White","role":"editor"},{"resourceURI":"http://gateway.marvel.com/v1/public/creators/11560","name":"Dalibor
+        Talajic","role":"penciller"}],"returned":5},"characters":{"available":1,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/characters","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/characters/1009268","name":"Deadpool"}],"returned":1},"stories":{"available":10,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/stories","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131775","name":"cover
+        from Foolkiller (2016) #1","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131776","name":"story
+        from Foolkiller (2016) #1","type":"interiorStory"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131777","name":"cover
+        from Foolkiller (2016) #2","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131778","name":"story
+        from Foolkiller (2016) #2","type":"interiorStory"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131779","name":"cover
+        from Foolkiller (2016) #3","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131780","name":"story
+        from Foolkiller (2016) #3","type":"interiorStory"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131781","name":"cover
+        from Foolkiller (2016) #4","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131782","name":"story
+        from Foolkiller (2016) #4","type":"interiorStory"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131783","name":"cover
+        from Foolkiller (2016) #5","type":"cover"},{"resourceURI":"http://gateway.marvel.com/v1/public/stories/131784","name":"story
+        from Foolkiller (2016) #5","type":"interiorStory"}],"returned":10},"comics":{"available":5,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/comics","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60653","name":"Foolkiller
+        (2016) #1"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60654","name":"Foolkiller
+        (2016) #2"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60655","name":"Foolkiller
+        (2016) #3"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60656","name":"Foolkiller
+        (2016) #4"},{"resourceURI":"http://gateway.marvel.com/v1/public/comics/60657","name":"Foolkiller
+        (2016) #5"}],"returned":5},"events":{"available":0,"collectionURI":"http://gateway.marvel.com/v1/public/series/22413/events","items":[],"returned":0},"next":null,"previous":null},{"id":5382,"title":"Foolkiller:
         Fool''s Paradise (2008)","description":null,"resourceURI":"http://gateway.marvel.com/v1/public/series/5382","urls":[{"type":"detail","url":"http://marvel.com/comics/series/5382/foolkiller_fools_paradise_2008?utm_campaign=apiRef&utm_source=<PUBLIC_KEY>"}],"startYear":2008,"endYear":2008,"rating":"EXPLICIT
         CONTENT","type":"","modified":"-0001-11-30T00:00:00-0500","thumbnail":{"path":"http://i.annihil.us/u/prod/marvel/i/mg/3/90/4c3617ad51597","extension":"jpg"},"creators":{"available":1,"collectionURI":"http://gateway.marvel.com/v1/public/series/5382/creators","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/creators/9367","name":"Rodolfo
         Muraguchi","role":"other"}],"returned":1},"characters":{"available":0,"collectionURI":"http://gateway.marvel.com/v1/public/series/5382/characters","items":[],"returned":0},"stories":{"available":2,"collectionURI":"http://gateway.marvel.com/v1/public/series/5382/stories","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/stories/47917","name":"Foolkiller
@@ -122,5 +122,5 @@ http_interactions:
         White Angels 1-5","type":"interiorStory"}],"returned":2},"comics":{"available":1,"collectionURI":"http://gateway.marvel.com/v1/public/series/7259/comics","items":[{"resourceURI":"http://gateway.marvel.com/v1/public/comics/24075","name":"Foolkiller:
         White Angels (Trade Paperback)"}],"returned":1},"events":{"available":0,"collectionURI":"http://gateway.marvel.com/v1/public/series/7259/events","items":[],"returned":0},"next":null,"previous":null}]}}'
     http_version: 
-  recorded_at: Wed, 13 Jun 2018 20:11:24 GMT
+  recorded_at: Sun, 17 Jun 2018 11:15:05 GMT
 recorded_with: VCR 4.0.0
