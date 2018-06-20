@@ -14,7 +14,8 @@ module CV
         },
         external_url: entity["site_detail_url"],
         country: nil,
-        language: nil
+        language: nil,
+        service: "cv"
       }
     end
   end

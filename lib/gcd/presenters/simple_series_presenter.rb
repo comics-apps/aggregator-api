@@ -16,7 +16,8 @@ module GCD
         },
         external_url: "https://www.comics.org/series/#{entity[:id]}/",
         country: country[:name],
-        language: language[:name]
+        language: language[:name],
+        service: "gcd"
       }
     end
   end

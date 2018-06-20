@@ -12,7 +12,8 @@ module CDB
         },
         external_url: "http://www.comicbookdb.com/title.php?ID=#{entity["cdb_id"]}",
         country: nil,
-        language: nil
+        language: nil,
+        service: "cdb"
       }
     end
   end

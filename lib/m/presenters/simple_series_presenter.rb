@@ -15,7 +15,8 @@ module M
         },
         external_url: url,
         country: nil,
-        language: nil
+        language: nil,
+        service: "m"
       }
     end
   end
