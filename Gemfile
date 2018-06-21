@@ -13,6 +13,11 @@ gem "roda"
 gem "mysql2"
 gem "sequel"
 
+group :development, :test do
+  gem "vcr"
+  gem "webmock"
+end
+
 group :development do
   gem "shotgun"
 end
@@ -21,6 +26,4 @@ group :test do
   gem "byebug"
   gem "rack-test"
   gem "rspec"
-  gem "vcr"
-  gem "webmock"
 end
