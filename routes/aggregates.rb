@@ -1,9 +1,14 @@
 require_relative "../lib/aggregation/operations/create"
 require_relative "../lib/aggregation/operations/delete"
+require_relative "../lib/aggregation/operations/find_all"
 
 class App < Roda
   route("aggregates") do |r|
     r.is do
+      r.get do
+        Aggregation::FindAll.call(r.params)
+      end
+
       r.post do
         response.status = 201
         Aggregation::Create.call(
