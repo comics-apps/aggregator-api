@@ -29,14 +29,14 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Set-Cookie:
-      - device_view=full; expires=Tue, 17-Jul-2018 11:11:12 GMT; Max-Age=2592000;
+      - device_view=full; expires=Mon, 23-Jul-2018 21:52:49 GMT; Max-Age=2592000;
         path=/; HttpOnly
-      - satcv=71ca0fbf86b4c1ebcb7e1e9556655c5b; path=/; domain=.comicvine.gamespot.com;
+      - satcv=16b34521c03519cede9ca9e5a68592c9; path=/; domain=.comicvine.gamespot.com;
         HttpOnly
       Cache-Control:
       - no-cache
       Date:
-      - Sun, 17 Jun 2018 11:11:12 GMT
+      - Sat, 23 Jun 2018 21:52:49 GMT
     body:
       encoding: UTF-8
       string: '{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":1,"status_code":1,"results":{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-3845\/","count_of_issues":6,"date_added":"2008-06-06
@@ -46,5 +46,103 @@ http_interactions:
         Images"},"issues":[{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94610\/","id":94610,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-1\/4000-94610\/","issue_number":"1"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94611\/","id":94611,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-2\/4000-94611\/","issue_number":"2"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94612\/","id":94612,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-3\/4000-94612\/","issue_number":"3"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94613\/","id":94613,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-4\/4000-94613\/","issue_number":"4"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94614\/","id":94614,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-5\/4000-94614\/","issue_number":"5"},{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94615\/","id":94615,"name":"","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-6\/4000-94615\/","issue_number":"6"}],"last_issue":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94615\/","id":94615,"name":null,"issue_number":"6"},"name":"Foofur","publisher":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/publisher\/4010-3427\/","id":3427,"name":"Star
         Comics"},"site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur\/4050-3845\/","start_year":"1987"},"version":"1.0"}'
     http_version: 
-  recorded_at: Sun, 17 Jun 2018 11:11:12 GMT
+  recorded_at: Sat, 23 Jun 2018 21:52:49 GMT
+- request:
+    method: get
+    uri: https://comicvine.gamespot.com/api/issues/?api_key=<API_KEY>&filter=volume:3845&format=json&limit=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - device_view=full; expires=Mon, 23-Jul-2018 21:52:50 GMT; Max-Age=2592000;
+        path=/; HttpOnly
+      - satcv=5dbaf427e19c1a271f258cb04c685df6; path=/; domain=.comicvine.gamespot.com;
+        HttpOnly
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sat, 23 Jun 2018 21:52:50 GMT
+    body:
+      encoding: UTF-8
+      string: '{"error":"OK","limit":1,"offset":0,"number_of_page_results":1,"number_of_total_results":6,"status_code":1,"results":[{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94610\/","cover_date":"1987-08-01","date_added":"2008-06-06
+        11:15:00","date_last_updated":"2010-06-04 16:22:58","deck":null,"description":null,"has_staff_review":false,"id":94610,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/61615-3845-94610-1-foofur.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/61615-3845-94610-1-foofur.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/61615-3845-94610-1-foofur.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/61615-3845-94610-1-foofur.jpg","small_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/61615-3845-94610-1-foofur.jpg","super_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/61615-3845-94610-1-foofur.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/61615-3845-94610-1-foofur.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/61615-3845-94610-1-foofur.jpg","original_url":"https:\/\/comicvine.gamespot.com\/api\/image\/original\/61615-3845-94610-1-foofur.jpg","image_tags":"All
+        Images"},"issue_number":"1","name":null,"site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-1\/4000-94610\/","store_date":null,"volume":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-3845\/","id":3845,"name":"Foofur","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur\/4050-3845\/"}}],"version":"1.0"}'
+    http_version: 
+  recorded_at: Sat, 23 Jun 2018 21:52:50 GMT
+- request:
+    method: get
+    uri: https://comicvine.gamespot.com/api/issues/?api_key=<API_KEY>&filter=volume:3845&format=json&offset=0&sort=issue_number
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      Set-Cookie:
+      - device_view=full; expires=Mon, 23-Jul-2018 21:52:51 GMT; Max-Age=2592000;
+        path=/; HttpOnly
+      - satcv=2bda4dff0af2994716382885701218ad; path=/; domain=.comicvine.gamespot.com;
+        HttpOnly
+      Cache-Control:
+      - no-cache
+      Date:
+      - Sat, 23 Jun 2018 21:52:51 GMT
+    body:
+      encoding: UTF-8
+      string: '{"error":"OK","limit":100,"offset":0,"number_of_page_results":6,"number_of_total_results":6,"status_code":1,"results":[{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94610\/","cover_date":"1987-08-01","date_added":"2008-06-06
+        11:15:00","date_last_updated":"2010-06-04 16:22:58","deck":null,"description":null,"has_staff_review":false,"id":94610,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/61615-3845-94610-1-foofur.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/61615-3845-94610-1-foofur.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/61615-3845-94610-1-foofur.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/61615-3845-94610-1-foofur.jpg","small_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/61615-3845-94610-1-foofur.jpg","super_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/61615-3845-94610-1-foofur.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/61615-3845-94610-1-foofur.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/61615-3845-94610-1-foofur.jpg","original_url":"https:\/\/comicvine.gamespot.com\/api\/image\/original\/61615-3845-94610-1-foofur.jpg","image_tags":"All
+        Images"},"issue_number":"1","name":null,"site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-1\/4000-94610\/","store_date":null,"volume":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-3845\/","id":3845,"name":"Foofur","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur\/4050-3845\/"}},{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94611\/","cover_date":"1987-10-01","date_added":"2008-06-06
+        11:15:00","date_last_updated":"2010-06-04 16:29:24","deck":null,"description":null,"has_staff_review":false,"id":94611,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/61616-3845-94611-1-foofur.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/61616-3845-94611-1-foofur.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/61616-3845-94611-1-foofur.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/61616-3845-94611-1-foofur.jpg","small_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/61616-3845-94611-1-foofur.jpg","super_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/61616-3845-94611-1-foofur.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/61616-3845-94611-1-foofur.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/61616-3845-94611-1-foofur.jpg","original_url":"https:\/\/comicvine.gamespot.com\/api\/image\/original\/61616-3845-94611-1-foofur.jpg","image_tags":"All
+        Images"},"issue_number":"2","name":null,"site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-2\/4000-94611\/","store_date":null,"volume":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-3845\/","id":3845,"name":"Foofur","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur\/4050-3845\/"}},{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94612\/","cover_date":"1987-12-01","date_added":"2008-06-06
+        11:15:00","date_last_updated":"2010-06-04 16:38:17","deck":null,"description":null,"has_staff_review":false,"id":94612,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/61617-3845-94612-1-foofur.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/61617-3845-94612-1-foofur.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/61617-3845-94612-1-foofur.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/61617-3845-94612-1-foofur.jpg","small_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/61617-3845-94612-1-foofur.jpg","super_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/61617-3845-94612-1-foofur.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/61617-3845-94612-1-foofur.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/61617-3845-94612-1-foofur.jpg","original_url":"https:\/\/comicvine.gamespot.com\/api\/image\/original\/61617-3845-94612-1-foofur.jpg","image_tags":"All
+        Images"},"issue_number":"3","name":null,"site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-3\/4000-94612\/","store_date":null,"volume":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-3845\/","id":3845,"name":"Foofur","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur\/4050-3845\/"}},{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94613\/","cover_date":"1988-02-01","date_added":"2008-06-06
+        11:15:00","date_last_updated":"2010-06-04 16:38:34","deck":null,"description":null,"has_staff_review":false,"id":94613,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/61618-3845-94613-1-foofur.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/61618-3845-94613-1-foofur.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/61618-3845-94613-1-foofur.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/61618-3845-94613-1-foofur.jpg","small_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/61618-3845-94613-1-foofur.jpg","super_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/61618-3845-94613-1-foofur.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/61618-3845-94613-1-foofur.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/61618-3845-94613-1-foofur.jpg","original_url":"https:\/\/comicvine.gamespot.com\/api\/image\/original\/61618-3845-94613-1-foofur.jpg","image_tags":"All
+        Images"},"issue_number":"4","name":null,"site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-4\/4000-94613\/","store_date":null,"volume":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-3845\/","id":3845,"name":"Foofur","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur\/4050-3845\/"}},{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94614\/","cover_date":"1988-04-01","date_added":"2008-06-06
+        11:15:00","date_last_updated":"2010-06-04 16:38:48","deck":null,"description":"<br\/>","has_staff_review":false,"id":94614,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/61619-3845-94614-1-foofur.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/61619-3845-94614-1-foofur.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/61619-3845-94614-1-foofur.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/61619-3845-94614-1-foofur.jpg","small_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/61619-3845-94614-1-foofur.jpg","super_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/61619-3845-94614-1-foofur.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/61619-3845-94614-1-foofur.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/61619-3845-94614-1-foofur.jpg","original_url":"https:\/\/comicvine.gamespot.com\/api\/image\/original\/61619-3845-94614-1-foofur.jpg","image_tags":"All
+        Images"},"issue_number":"5","name":null,"site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-5\/4000-94614\/","store_date":null,"volume":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-3845\/","id":3845,"name":"Foofur","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur\/4050-3845\/"}},{"aliases":null,"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/issue\/4000-94615\/","cover_date":"1988-06-01","date_added":"2008-06-06
+        11:15:00","date_last_updated":"2010-06-04 16:39:02","deck":null,"description":null,"has_staff_review":false,"id":94615,"image":{"icon_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_avatar\/61620-3845-94615-1-foofur.jpg","medium_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_medium\/61620-3845-94615-1-foofur.jpg","screen_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_medium\/61620-3845-94615-1-foofur.jpg","screen_large_url":"https:\/\/comicvine.gamespot.com\/api\/image\/screen_kubrick\/61620-3845-94615-1-foofur.jpg","small_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_small\/61620-3845-94615-1-foofur.jpg","super_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_large\/61620-3845-94615-1-foofur.jpg","thumb_url":"https:\/\/comicvine.gamespot.com\/api\/image\/scale_avatar\/61620-3845-94615-1-foofur.jpg","tiny_url":"https:\/\/comicvine.gamespot.com\/api\/image\/square_mini\/61620-3845-94615-1-foofur.jpg","original_url":"https:\/\/comicvine.gamespot.com\/api\/image\/original\/61620-3845-94615-1-foofur.jpg","image_tags":"All
+        Images"},"issue_number":"6","name":null,"site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur-6\/4000-94615\/","store_date":null,"volume":{"api_detail_url":"https:\/\/comicvine.gamespot.com\/api\/volume\/4050-3845\/","id":3845,"name":"Foofur","site_detail_url":"https:\/\/comicvine.gamespot.com\/foofur\/4050-3845\/"}}],"version":"1.0"}'
+    http_version: 
+  recorded_at: Sat, 23 Jun 2018 21:52:51 GMT
 recorded_with: VCR 4.0.0
