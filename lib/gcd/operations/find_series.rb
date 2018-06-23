@@ -39,7 +39,7 @@ module GCD
     end
 
     def self.load_issues(series)
-      DB[:gcd][:gcd_issue].where(series_id: series[:id]).to_a
+      DB[:gcd][:gcd_issue].where(series_id: series[:id], variant_of_id: nil).to_a
     end
 
     def self.load_relation(relation, ids, group: false)
