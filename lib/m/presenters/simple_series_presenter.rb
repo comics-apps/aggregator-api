@@ -6,7 +6,7 @@ module M
 
       {
         id: entity["id"],
-        name: entity["title"],
+        name: entity["title"].split(" (")[0],
         start_year: entity["startYear"].to_s,
         issue_count: nil,
         publisher: {
