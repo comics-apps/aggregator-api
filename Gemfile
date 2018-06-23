@@ -8,6 +8,7 @@ gem "faraday"
 gem "marvel-api"
 gem "rack-cors"
 gem "roda"
+gem "rake"
 
 # Database
 gem "mysql2"

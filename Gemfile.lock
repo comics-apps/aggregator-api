@@ -23,6 +23,7 @@ GEM
     rack-cors (1.0.2)
     rack-test (1.0.0)
       rack (>= 1.0, < 3)
+    rake (12.3.1)
     roda (3.9.0)
       rack
     rspec (3.7.0)
@@ -61,6 +62,7 @@ DEPENDENCIES
   pg
   rack-cors
   rack-test
+  rake
   roda
   rspec
   sequel
