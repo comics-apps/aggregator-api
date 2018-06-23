@@ -4,7 +4,7 @@ module CDB
       {
         id: entity["cdb_id"],
         name: entity["name"],
-        start_year: entity["start_date"],
+        start_year: entity["start_date"].to_s.match(/\d+/),
         issue_count: nil,
         publisher: {
           id: entity["publisher_id"],

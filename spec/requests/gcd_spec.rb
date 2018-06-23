@@ -21,8 +21,7 @@ RSpec.describe App, type: :request do
         expect(entity["publisher"].keys).to match_array(%w(id name))
         expect(entity["publisher"]["id"]).not_to be_nil
         expect(entity["publisher"]["name"]).not_to be_nil
-        expect(entity["start_year"]).not_to be_nil
-        expect(entity["start_year"]).to be_a(String)
+        expect(entity["start_year"]).to eql("1873")
         expect(entity["external_url"]).not_to be_nil
         expect(entity["service"]).to eql("gcd")
       end
@@ -43,8 +42,7 @@ RSpec.describe App, type: :request do
         expect(entity["publisher"].keys).to match_array(%w(id name))
         expect(entity["publisher"]["id"]).not_to be_nil
         expect(entity["publisher"]["name"]).not_to be_nil
-        expect(entity["start_year"]).not_to be_nil
-        expect(entity["start_year"]).to be_a(String)
+        expect(entity["start_year"]).to eql("1867")
         expect(entity["external_url"]).not_to be_nil
         expect(entity["service"]).to eql("gcd")
         expect(entity["issues"]).to be_an(Array)
