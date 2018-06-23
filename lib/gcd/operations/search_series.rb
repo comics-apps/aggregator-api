@@ -24,7 +24,7 @@ module GCD
     end
 
     def self.load_series(query, offset)
-      DB[:gcd_series]
+      DB[:gcd][:gcd_series]
         .where(Sequel.like(Sequel.function(:lower, :name), "%#{query}%"))
         .limit(100).offset(offset).to_a
     end
@@ -45,7 +45,7 @@ module GCD
     end
 
     def self.load_relation(relation, ids, group: false)
-      data = DB[relation].where(id: ids).to_a
+      data = DB[:gcd][relation].where(id: ids).to_a
       group ? group(data) : data
     end
 

@@ -4,11 +4,14 @@ require "faraday"
 require "marvel/api"
 require "roda"
 
-Dotenv.load
+ENV["RACK_ENV"] ||= "develop"
+Dotenv.load(".env.#{ENV["RACK_ENV"]}", ".env")
 
 require_relative "lib/database_setup"
 
 class App < Roda
+  plugin :all_verbs
+  plugin :halt
   plugin :json
   plugin :multi_route
 
@@ -16,6 +19,7 @@ class App < Roda
   require_relative "routes/gcd"
   require_relative "routes/m"
   require_relative "routes/cdb"
+  require_relative "routes/aggregates"
 
   route do |r|
     r.multi_route
@@ -34,6 +38,10 @@ class App < Roda
 
     r.on "cdb" do
       r.route "cdb"
+    end
+
+    r.on "aggregates" do
+      r.routes "aggregates"
     end
 
     r.root do

@@ -22,11 +22,11 @@ module GCD
     end
 
     def self.load_series(id)
-      DB[:gcd_series].where(id: id).first
+      DB[:gcd][:gcd_series].where(id: id).first
     end
 
     def self.load_publisher(series)
-      DB[:gcd_publisher].where(id: series[:publisher_id]).first
+      DB[:gcd][:gcd_publisher].where(id: series[:publisher_id]).first
     end
 
     def self.load_countries(series, publisher)
@@ -35,15 +35,15 @@ module GCD
     end
 
     def self.load_language(series)
-      DB[:stddata_language].where(id: series[:language_id]).first
+      DB[:gcd][:stddata_language].where(id: series[:language_id]).first
     end
 
     def self.load_issues(series)
-      DB[:gcd_issue].where(series_id: series[:id]).to_a
+      DB[:gcd][:gcd_issue].where(series_id: series[:id]).to_a
     end
 
     def self.load_relation(relation, ids, group: false)
-      data = DB[relation].where(id: ids).to_a
+      data = DB[:gcd][relation].where(id: ids).to_a
       group ? group(data) : data
     end
 

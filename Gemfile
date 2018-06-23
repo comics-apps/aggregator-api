@@ -11,6 +11,7 @@ gem "roda"
 
 # Database
 gem "mysql2"
+gem "pg"
 gem "sequel"
 
 group :development, :test do
