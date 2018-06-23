@@ -1,4 +1,4 @@
-class Caching::ComicVine::Single
+class Caching::ComicVine::Series
   include Caching::ComicVine::CacheSupport
 
   attr_reader :caching

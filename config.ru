@@ -16,11 +16,15 @@ unless ENV["RACK_ENV"] == "test"
     c.around_http_request do |request|
       Caching.new(request) do
         comic_vine? do
-          list? do
+          series_list? do
             cache(VCR.use_cassette(name, &request))
           end
 
-          single? do
+          issue_list? do
+            cache(VCR.use_cassette(name, &request))
+          end
+
+          series? do
             cache(VCR.use_cassette(name, &request))
           end
         end
