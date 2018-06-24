@@ -12,10 +12,10 @@ module Aggregation
 
       issues.map do |issue|
         issue.tap do |h|
-          h[:cv_issue] = cv_issues[h[:cv_id]][0]
-          h[:gcd_issue] = gcd_issues[h[:gcd_id]][0]
-          h[:cdb_issue] = cdb_issues[h[:cdb_id]][0]
-          h[:m_issue] = m_issues[h[:m_id]][0]
+          h[:cv_issue] = h[:cv_id] ? cv_issues[h[:cv_id]][0] : nil
+          h[:gcd_issue] = h[:gcd_id] ? gcd_issues[h[:gcd_id]][0] : nil
+          h[:cdb_issue] = h[:cdb_id] ? cdb_issues[h[:cdb_id]][0] : nil
+          h[:m_issue] = h[:m_id] ? m_issues[h[:m_id]][0] : nil
         end
       end
     end
@@ -35,8 +35,8 @@ module Aggregation
     end
 
     def self.load_cv_issues(issues)
+      issues = issues.select { |i| i[:cv_id] }
       issues.map do |issue|
-        next unless issue[:cv_id]
         id = id_partition(issue[:cv_id])
         issue = JSON.parse(File.read("tmp/cache/comicvine/issues/#{id}_brief.json"))
         CV::SimpleIssuePresenter.call(issue).merge(service: "cv")
@@ -51,8 +51,8 @@ module Aggregation
     end
 
     def self.load_cdb_issues(issues)
+      issues = issues.select { |i| i[:cdb_id] }
       issues.map do |issue|
-        next unless issue[:cdb_id]
         id = id_partition(issue[:cdb_id])
         issue = JSON.parse(File.read("tmp/cache/comicbookdb/issues/#{id}_brief.json"))
         CDB::SimpleIssuePresenter.call(issue).merge(service: "cdb")
@@ -60,8 +60,8 @@ module Aggregation
     end
 
     def self.load_m_issues(issues)
+      issues = issues.select { |i| i[:m_id] }
       issues.map do |issue|
-        next unless issue[:m_id]
         id = id_partition(issue[:m_id])
         issue = JSON.parse(File.read("tmp/cache/marvel/comics/#{id}_brief.json"))
         M::SimpleIssuePresenter.call(issue).merge(service: "m")
