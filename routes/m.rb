@@ -3,6 +3,7 @@ require_relative "../lib/m/presenters/simple_issue_presenter"
 require_relative "../lib/m/presenters/simple_series_presenter"
 
 require_relative "../lib/m/operations/find_series"
+require_relative "../lib/m/operations/search_issues"
 require_relative "../lib/m/operations/search_series"
 
 class App < Roda

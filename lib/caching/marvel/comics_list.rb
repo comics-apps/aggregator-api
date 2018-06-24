@@ -14,8 +14,9 @@ class Caching::Marvel::ComicsList
       caching.uri.host,
       caching.path,
       "series_" + caching.query["series"],
-      "offset_" + (caching.query["offset"] || "0")
-    ].join("/")
+      "offset_" + (caching.query["offset"] || "0"),
+      caching.query["limit"].to_i == 1 ? "limit_" + caching.query["limit"] : nil
+    ].compact.join("/")
   end
 
   def cache(response)
