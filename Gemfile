@@ -6,6 +6,15 @@ gem "dotenv"
 gem "rack-cors"
 gem "roda"
 
+# Services
+gem "comic_vine-api"
+gem "faraday" # for Comicbook DB
+gem "marvel-api"
+
+# Database
+gem "mysql2"
+gem "sequel"
+
 group :development do
   gem "shotgun"
 end
